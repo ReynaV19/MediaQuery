@@ -1,0 +1,215 @@
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebd8d0;
+    color: #050a11;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #9a9db5;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(''); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.25em;
+}
+
+.hero img {
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Section - Tarjetas de contenido */
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #6c757d;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/* Dispositivos móviles (ancho máximo de 600px) */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .hero img {
+        width: 80%;
+    }
+}
+
+/* Tabletas (ancho entre 601px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card-section {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.75em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* Computadoras de escritorio (ancho superior a 1024px) */
+@media (min-width: 1025px) {
+    .card {
+        width: 30%;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.25em;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+}
